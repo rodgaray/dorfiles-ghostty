@@ -1,0 +1,75 @@
+# Rodrigo's GhosTTy config file
+# =============================
+
+# Friendly reminders:
+# ===================
+# 
+# NVIM Style classic movement keys
+# h = left - izquierda
+# j = bottom - down - abajo
+# k = top - up - arriba
+# l = right - derecha
+#
+
+# Background Collor
+
+#background = 263a38
+background = 151923
+
+# macOS Related
+macos-titlebar-style = transparent
+
+# Theme
+theme = Catppuccin Frappe
+#theme = Arthur
+
+# Font Size
+font-size = 15
+
+# Keyboard Related
+mouse-hide-while-typing = true
+cursor-style = block
+
+# Quick terminal
+# ==============
+
+keybind = cmd+s>q=toggle_quick_terminal
+
+# Keybindings style
+# =================
+
+#keybind = cmd+left cursor_line_start
+#keybind = cmd+right cursor_line_end
+
+keybind = cmd+s>r=reload_config
+
+# Split Screen
+keybind = cmd+s>¿=new_split:right
+keybind = cmd+s>+=new_split:down
+
+# Nvim Style
+keybind = cmd+s>h=goto_split:left
+keybind = cmd+s>j=goto_split:bottom
+keybind = cmd+s>k=goto_split:top
+keybind = cmd+s>l=goto_split:right
+
+# Zoom in and in/out in split windows
+keybind = cmd+s>z=toggle_split_zoom
+
+# Equialize. Con el mouse se pueden modificar el tamaño de las ventanas.
+# Con Equializa se vuelven a acomodar.
+keybind = cmd+s>e=equalize_splits
+
+keybind = cmd+s>i=increase_font_size:1.5
+keybind = cmd+s>0=reset_font_size
+
+# background-opacity:
+# ==================
+# The opacity level (opposite of transparency) of the background. A value of 1 is fully opaque and a value of 0 is fully transparent. A value less than 0 or greater than 1 will be clamped to the nearest valid value.
+# On macOS, background opacity is disabled when the terminal enters native fullscreen. This is because the background becomes gray and it can cause widgets to show through which isn't generally desirable. On macOS, changing this configuration requires restarting Ghostty completely.
+
+# Full Opaque:
+# background-opacity = 1
+# Full Transparent:
+# background-opacity = 0
+background-opacity = 0.95
