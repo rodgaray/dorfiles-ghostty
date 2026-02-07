@@ -22,6 +22,7 @@ macos-titlebar-style = transparent
 # Theme
 theme = Catppuccin Frappe
 #theme = Arthur
+#theme = TokyoNight Night
 
 # Font Size
 font-size = 15
